@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina de Web</title>
+</head>
+
+<body>
+    <form action="process.php" method="post">
+        <p>Por favor regístrese</p>
+        <label for="nombre">Nombre:</label>
+        <input type="color" id="nombre" name="nombre">
+       
+        <label for="apellido">Apellido:<label>
+        <input type="text" id="apellido" name="apellido">
+       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com">
+       
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" placeholder="46-98-488-85">
+       
+        <p>Selecciona tu género:</p>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+       
+        <label for="femenino">Female</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        
+        <labelcopy for="decline">Prefiero no decir</label>
+        <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+       
+        <p>Selecciona 3 de tus colores favoritos:</p>
+        <label for="azul">Azul</label>
+        <input type="checkbox" id="azul" name="color" value="azul">
+        
+        <label for="verde">Verde</label>
+        <input type="checkbox" id="verde" name="color" value="verde">
+       
+        <label for="rojo">Rojo</label>
+        <input type="checkbox" id="rojo" name="color" value="rojo">
+        
+        <label for="negro">Negro</label>
+        <input type="checkbox" id="negro" name="color" value="negro">
+       
+        <label for="morado">Morado</label>
+        <input type="checkbox" id="morado" name="color" value="morado">
+        
+        <p>Escribe unas palabras sobre ti mismo:</p>
+        <textarea name="descripcion"></textarea>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+       <label for="pw_confirm">Confirmación de Contraseña:</label>
+       <input type="password" id="pw_confirm" name="password_confirmacion">
+       
+       <input type="submit" value="Presiona aquí para registrarte">
+    </form>
+</body>
+
+</html>
