@@ -1,0 +1,34 @@
+.wrapper {
+    display: grid;
+    background: rgb(246, 246, 246);
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        display: grid;
+        background: rgb(232, 237, 232);
+        grid-template: 1fr / 1fr;
+    }
+  }
+  
+
+a:hover, a:focus {
+    color: red;
+}
+
+a:active {
+    color: black;
+}
+
+button {
+    cursor: url('./cursor-64.ico'), auto;
+}
+
+button:hover {
+    background: red;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
