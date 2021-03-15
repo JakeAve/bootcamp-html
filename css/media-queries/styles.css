@@ -1,17 +1,22 @@
 .wrapper {
     display: grid;
     background: rgb(246, 246, 246);
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 481px) {
     .wrapper {
-        display: grid;
-        background: rgb(232, 237, 232);
-        grid-template: 1fr / 1fr;
+        padding: 0 4rem;
     }
-  }
-  
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 32px;
+        font-size: 1.2rem;
+    }
+}
 
 a:hover, a:focus {
     color: red;
