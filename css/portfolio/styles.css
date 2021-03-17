@@ -39,3 +39,23 @@ body * {
 .sm3 {
     grid-column: 9 / 13;
 }
+
+.small-sec {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.small-sec button {
+   justify-self: center;
+   align-self: center;
+}
+
+.tech-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 32px;
+}
+
+.tech-images img {
+    max-width: 100%;
+}
