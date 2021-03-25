@@ -1,3 +1,26 @@
+// function algo1(arr) {
+//     let suma = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         suma = suma + arr[i];
+//     }
+
+//     return suma / arr.length;
+// }
+
+// const _1 = algo1([1,2,5,3,4,8,56]);
+
+//3
+
+function algo3() {
+    let suma = 0;
+    for (let i = 1; i <= 5000; i ++) {
+        if (i % 2) suma += i;
+    }
+    return suma;
+}
+
+const _3 = algo3()
+
 // 6
 
 function algo6(arr) {
@@ -11,16 +34,15 @@ function algo6(arr) {
 
 const _6 = algo6([1, 2, 5, 3, 4, 8, 56]);
 
-// function algo1(arr) {
-//     let suma = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//         suma = suma + arr[i];
-//     }
+function algo7() {
+  const arr = [];
+  for (let i = 1; i < 50; i += 2) {
+      arr.push(i);
+  }
+  return arr;
+}
 
-//     return suma / arr.length;
-// }
-
-// const _1 = algo1([1,2,5,3,4,8,56]);
+const _7 = algo7();
 
 function algo8(arr, Y) {
     return arr.filter((val) => val > Y).length
@@ -88,4 +110,4 @@ const _13 = algo13([-1,7, -8,4,5,6])
 // const _13 = algo13([-1, 7, -8, 4, 5, 6])
 
 
-console.log({ _6, _8, _11, _13 })
+console.log({ _3, _6, _7, _8, _11, _13 })
