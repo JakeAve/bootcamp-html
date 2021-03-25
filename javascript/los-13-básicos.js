@@ -39,6 +39,38 @@ const _8 = algo8([1, 2, 3, 5, 4], 2);
 // const _8 = algo8([1, 2, 3, 5, 4], 2);
 
 
+// 11
+
+// function algo11(arr) {
+//     const max = Math.max(...arr);
+//     const min = Math.min(...arr);
+//     const promedio = arr.reduce((acc, val) => acc += val, 0) / arr.length;
+//     return [max, min, promedio]
+// }
+
+
+function algo11(arr) {
+    let max = arr[0];
+    let min = arr[0];
+    let suma = 0;
+    for (let i = 0; i < arr.length; i++) {
+        const otroNombre = arr[i];
+        if (otroNombre > max) {
+            max = otroNombre
+        }
+        if (otroNombre < min) {
+            min = otroNombre
+        }
+        suma += otroNombre;
+    }
+    
+    const promedio = suma / arr.length;
+
+    return [max, min, promedio];
+}
+
+const _11 = algo11([1,7,9,12,32])
+
 function algo13(arr) {
     return arr.map((val) => val < 0 ? 'Dojo' : val);
 }
@@ -56,4 +88,4 @@ const _13 = algo13([-1,7, -8,4,5,6])
 // const _13 = algo13([-1, 7, -8, 4, 5, 6])
 
 
-console.log({ _6, _8, _13 })
+console.log({ _6, _8, _11, _13 })
