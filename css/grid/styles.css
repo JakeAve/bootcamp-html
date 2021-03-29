@@ -1,0 +1,110 @@
+.padre {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img heading"
+    "img texto";
+}
+
+.hijo {
+  height: 5rem;
+  width: 5rem;
+  color: black;
+}
+
+.one {
+  background: red;
+  grid-area: img;
+}
+.two {
+  background: blue;
+  grid-area: heading;
+}
+.three {
+  background: purple;
+  grid-area: heading;
+}
+.four {
+  background: orange;
+}
+.five {
+  background: limegreen;
+}
+
+nav {
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 1rem;
+  border-right: 1px solid black;
+}
+
+nav ul li:last-child {
+  padding-right: 200px;
+}
+
+.flecha {
+  display: flex;
+  align-items: center;
+}
+
+.flechas::after {
+  content: "»";
+  font-size: 0.5rem;
+  font-weight: bold;
+  line-height: 0;
+  margin-left: 1rem;
+}
+
+.quick-facts {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-text-box {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.icon-text-box img {
+  grid-area: icon;
+  align-self: flex-start;
+}
+
+.icon-text-box .icon-text-heading {
+  grid-area: heading;
+  color: orange;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.action {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  gap: 10rem;
+  padding: 3rem 2rem;
+}
+
+.action button {
+  justify-self: center;
+}
