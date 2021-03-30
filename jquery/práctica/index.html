@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer
+    ></script>
+    <script src="./script.js" defer></script>
+    <script>
+        $('document').ready(()=> {
+
+            function esconderPs() {
+                $('p').hide();
+            }
+
+            // esconderPs();
+
+            function desvancer() {
+                $('p, img, h1, h2').fadeOut();
+            }
+
+            // desvancer();
+
+            function mostrar() {
+                $('p, img, h1').hide();
+                $('h2').click(() => {
+                    $('p, img').show();
+                    $('h1').fadeIn();
+                })
+            }
+
+            // mostrar();
+
+        })
+    </script>
+  </head>
+  <body>
+    <h1>Coding Dojo</h1>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <h2>Web Fundamentals</h2>
+    <p>paragraph 3</p>
+    <p class="special">paragraph 4</p>
+    <h2>Python Track</h2>
+    <img class="special" src="http://learn.codingdojo.com/assets/profile_pic.png" />
+    <button id="btn_special">Special</button>
+  </body>
+</html>
