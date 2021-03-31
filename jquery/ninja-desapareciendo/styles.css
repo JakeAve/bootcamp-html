@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+    gap: 2rem;
+}
+
+img {
+    width: 100px;
+}
+
+img:nth-child(1) {
+    border: 2px solid blue;
+}
+img:nth-child(2) {
+    border: 2px solid green;
+}
+img:nth-child(3) {
+    border: 2px solid yellow;
+}
+img:nth-child(4) {
+    border: 2px solid black;
+}
+img:nth-child(5) {
+    border: 2px solid grey;
+}
+img:nth-child(6) {
+    border: 2px solid red;
+}
+img:nth-child(7) {
+    border: 2px solid dodgerblue;
+}
+img:nth-child(8) {
+    border: 2px solid pink;
+}
+
+button {
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+}
